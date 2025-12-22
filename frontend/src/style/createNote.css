@@ -1,0 +1,57 @@
+.create-note {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 14px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: text;
+  transition: box-shadow 0.2s ease;
+}
+
+.create-note.expanded {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.create-note-title {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.create-note-content {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 24px;
+}
+
+.create-note.expanded .create-note-content {
+  min-height: 80px;
+}
+
+.create-note-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.create-note-actions button {
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.create-note-actions button:hover {
+  background-color: #1558b0;
+}

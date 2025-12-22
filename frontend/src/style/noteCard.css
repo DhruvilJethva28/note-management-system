@@ -1,0 +1,62 @@
+.note-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* subtle hover effect */
+.note-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.note-title {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.note-content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5f6368;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* action buttons container */
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* buttons */
+.edit-btn,
+.delete-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 6px;
+}
+
+.edit-btn {
+  color: #1a73e8;
+}
+
+.delete-btn {
+  color: #d93025;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  text-decoration: underline;
+}
