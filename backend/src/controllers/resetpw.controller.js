@@ -10,12 +10,12 @@ export const resetPW = async (req, res) => {
     }
 
     const hashPW=await bcrypt.hash(newPassword,10)
-      user.password = hashedPassword;
+      user.password = hashPW;
   user.resetOTP = undefined;
   user.resetOTPExpiry = undefined;
   await user.save()
   
-  res.json({ message: "Password reset successful" });
+  return res.json({ message: "Password reset successful" });
 } catch (error) {
  return res.status(500).json({ message: "internal server error" });
 }

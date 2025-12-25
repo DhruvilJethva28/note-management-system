@@ -23,7 +23,7 @@ export const forgetpw = async (req, res) => {
             `your otp is ${otp} expires in 10 minutes`
         )
 
-        res.status(201).json({message:"otp send "})
+        return res.status(200).json({message:"otp send "})
     } catch (error) {
         res.status(500).json({message:"server error"})
     }

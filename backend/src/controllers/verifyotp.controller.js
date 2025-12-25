@@ -13,7 +13,7 @@ export const verifyOTP=async(req,res)=>{
             return res.status(404).json({message:"otp invalid"})
         }
 
-        res.josn({message:"otp verified"})
+        return res.json({message:"otp verified"})
     } catch (error) {
         return res.status(500).json({message:"internal server error"})
     }
