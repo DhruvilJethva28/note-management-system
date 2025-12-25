@@ -39,6 +39,7 @@ function Login() {
     } catch {
       setError("Something went wrong");
     }
+
   };
 
   return (
@@ -80,6 +81,12 @@ function Login() {
           Don’t have an account?{" "}
           <span onClick={() => navigate("/")}>Register</span>
         </div>
+        <div className="auth-footer">
+          <span onClick={() => navigate("/forgot-password")}>
+            Forgot password?
+          </span>
+        </div>
+
       </div>
     </div>
   );
