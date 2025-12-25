@@ -10,6 +10,10 @@ router.post("/login",loginUser)
 router.post("/forgot-password",forgetpw)
 router.post("/verify-otp",verifyOTP)
 router.post("/reset-password",resetPW)
+router.get("/test-forgot", (req, res) => {
+  res.send("Forgot password route works");
+});
+
 // router.get("/test", (req, res) => {
 //   res.send("Auth routes working");
 // });
