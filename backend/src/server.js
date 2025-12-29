@@ -1,4 +1,6 @@
-console.log("SERVER FILE LOADED");
+// console.log("SERVER FILE LOADED");
+throw new Error("THIS IS THE BACKEND SERVER FILE");
+
 
 import express from "express";
 import dotenv from "dotenv";
