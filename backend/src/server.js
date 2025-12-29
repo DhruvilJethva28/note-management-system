@@ -1,5 +1,4 @@
-// console.log("SERVER FILE LOADED");
-throw new Error("THIS IS THE BACKEND SERVER FILE");
+console.log("SERVER FILE LOADED");
 
 
 import express from "express";
