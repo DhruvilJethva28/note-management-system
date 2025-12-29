@@ -17,18 +17,17 @@ export const forgetpw = async (req, res) => {
         user.resetOTPExpiry = Date.now() + 10 * 60 * 1000
 
         await user.save()
-        // await sendEmail(
-        //     email,
-        //     "password reset otp",
-        //     `your otp is ${otp} expires in 10 minutes`
-        // )
+        await sendEmail(
+            email,
+            "password reset otp",
+            `your otp is ${otp} expires in 10 minutes`
+        )
         return res.status(200).json({
-            message: "OTP generated",
-            otp // TEMP: for debugging
+            message: "OTP sent on your email",
         });
 
 
-        return res.status(200).json({ message: "otp send " })
+     
     } catch (error) {
         res.status(500).json({ message: "server error" })
     }
